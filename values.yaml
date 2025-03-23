@@ -1,0 +1,12 @@
+service:
+  port: 80
+  targetport: 80
+secret:
+  username: bXJhbWt1bWFyCg==
+  password: cGFzc3dvcmQtMDMzNQo=
+configmap:
+  db_host: db.eisenflow.host
+  db_username: eisenflow_admin
+replicas: 1
+max_surge: 1
+max_unavailable: 0
