@@ -1,0 +1,11 @@
+replicaCount: 1
+imageName: nginx:1.24
+serviceType: LoadBalancer
+configmap:
+  db_host: db_eisenflow
+  db_username: eisenflow_admin
+secret:
+  username: bXJhbWt1bWFyCg==
+  password: cGFzc3dvcmQtMDMzNQo=
+service:
+  port: 80
