@@ -3,12 +3,12 @@ entries:
   nginx-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-30T12:24:15.760235007Z"
+    created: "2025-03-30T12:30:17.059110298Z"
     description: A Helm chart for Kubernetes
     digest: 03eb4e81b514299c59782e9d81a888873be1734060080f1db1a4f4326b70547c
     name: nginx-chart
     type: application
     urls:
-    - https://github.com/mramkumar/demo-chart/nginx-chart-0.1.0.tgz
+    - https://mramkumar.github.io/demo-chart/nginx-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-30T12:24:15.759610595Z"
+generated: "2025-03-30T12:30:17.058779165Z"
