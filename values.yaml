@@ -1,0 +1,24 @@
+replicaCount: 3
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+tolerations:
+  - key: "node-role"
+    operator: "Exists"
+    effect: "NoSchedule"
+
+env:
+  APP_MODE: production
+  LOG_LEVEL: debug
+
+autoscaling:
+  enabled: false
+
+configMapEnabled: true

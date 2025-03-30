@@ -1,0 +1,12 @@
+{{- if .Values.configMapEnabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "nginx-chart.fullname" . }}-config
+data:
+  config.json: |
+    {
+      "mode": "{{ .Values.env.APP_MODE }}",
+      "log_level": "{{ .Values.env.LOG_LEVEL }}"
+    }
+{{- end }}
